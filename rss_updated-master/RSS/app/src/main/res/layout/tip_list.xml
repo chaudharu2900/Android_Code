@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:id="@+id/tips_list_main"
+    android:layout_height="match_parent">
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tips"
+        android:textAlignment="center"
+        android:text="Current Trending"
+        android:textSize="25sp"
+        />
+
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:isIndicator="false"
+        style="@style/foodRatingBar"
+        android:layout_above="@+id/remarks_edit"
+        android:layout_alignStart="@+id/scrollView" />
+    <EditText
+        android:id="@+id/remarks_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your review here"
+        android:inputType="textMultiLine"
+        android:layout_above="@+id/button123"
+        android:layout_alignStart="@+id/ratingBar1" />
+
+    <Button
+        android:id="@+id/button123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="submit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/remarks_edit" />
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/scrollView">
+
+            <TextView
+                android:autoLink="web"
+                android:id="@+id/tips_list_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                 android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="17sp"
+
+
+                />
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+
